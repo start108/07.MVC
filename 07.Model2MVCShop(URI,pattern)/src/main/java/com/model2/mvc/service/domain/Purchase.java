@@ -2,19 +2,22 @@ package com.model2.mvc.service.domain;
 
 import java.sql.Date;
 
+import com.model2.mvc.service.domain.Product;
+import com.model2.mvc.service.domain.User;
+
+
 public class Purchase {
 	
-	private User buyer;
-	private String divyAddr;
-	private String divyDate;
-	private String divyRequest;
-	private Date orderDate;
-	private String paymentOption;
-	private Product purchaseProd;
+	private User buyer;//
+	private String divyAddr;//
+	private String divyDate;//
+	private String divyRequest;//
+	private Date orderDate;//
+	private String paymentOption;//
+	private Product purchaseProd;//
 	private String receiverName;
 	private String receiverPhone;
 	private String tranCode;
-	private String amountPur;
 	private int tranNo;
 	
 	public Purchase(){
@@ -87,14 +90,6 @@ public class Purchase {
 		this.tranNo = tranNo;
 	}
 	
-	public String getAmountPur() {
-		return amountPur;
-	}
-
-	public void setAmountPur(String amountPur) {
-		this.amountPur = amountPur;
-	}
-
 	@Override
 	public String toString() {
 		return "PurchaseVO [buyer=" + buyer + ", divyAddr=" + divyAddr
@@ -103,6 +98,6 @@ public class Purchase {
 				+ paymentOption + ", purchaseProd=" + purchaseProd
 				+ ", receiverName=" + receiverName + ", receiverPhone="
 				+ receiverPhone + ", tranCode=" + tranCode + ", tranNo="
-				+ tranNo +", amountPur="+amountPur+ "]";
+				+ tranNo + "]";
 	}
 }
